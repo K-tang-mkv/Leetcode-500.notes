@@ -71,5 +71,10 @@ class Solution:
         return False
 ```
 
+The key steps are:
 
+* Use a hash table/map to store frequency of each element
+* Iterate through the array and increment count if element already seen
+* Check if any element has count > 1, if yes return true
+* If no element has count > 1, return false
 
