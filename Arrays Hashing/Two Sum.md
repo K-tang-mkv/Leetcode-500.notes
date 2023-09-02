@@ -30,3 +30,52 @@ You can return the answer in any order.
 
 * 2 <= nums.length <= 104
 * -109 <= nums[i] <= 109
+
+### Answer
+
+Thought Process:
+
+* We need to find two numbers in the array that add up to the target sum.
+* We can use a hash table to store array elements and their indices.
+* For every element, we check if target - element exists in hash table.
+* If yes, we have found the two numbers that sum to target.
+* We return their indices.
+
+cpp
+```cpp
+vector<int> twoSum(vector<int>& nums, int target) {
+  unordered_map<int, int> map; 
+
+  for(int i = 0; i < nums.size(); i++) {
+    int complement = target - nums[i];
+    if(map.find(complement) != map.end()) {
+      return {map[complement], i}; 
+    }
+    map[nums[i]] = i;
+  }
+  
+  return {};
+}
+```
+
+python
+```python3
+def twoSum(nums, target):
+  numMap = {}
+  
+  for i, n in enumerate(nums):
+    complement = target - n
+    if complement in numMap:
+      return [numMap[complement], i]
+    numMap[n] = i
+    
+  return []
+```
+
+Key steps:
+
+* Use hash table to store array elements and indices
+* Check if complement exists in table
+* Return indices if found
+
+  
