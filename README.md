@@ -3,3 +3,5 @@
 [Contains Duplicated](https://github.com/K-tang-mkv/Leetcode-500.notes/blob/main/Arrays%20Hashing/Contains%20Duplicate.md)
 
 [Valid Anagram](https://github.com/K-tang-mkv/Leetcode-500.notes/blob/main/Arrays%20Hashing/Valid%20Anagram.md)
+
+[Two Sum](https://github.com/K-tang-mkv/Leetcode-500.notes/blob/main/Arrays%20Hashing/Two%20Sum.md#two-sum)
